@@ -7,8 +7,8 @@ port = 8080
 keppAlive = 60
 topic = 'COLOCAR CANAL BROKER AQUI'
 
-# funcao responsavel por cadastrar no banco de dados a temperatura do sensor
-def insertTemperature(message):
+# funcao responsavel por cadastrar no banco de dados a umidade do sensor
+def insertUmidade(message):
     conn = sqlite3.connect('database.db')
     cursor = conn.cursor()
 
@@ -33,7 +33,7 @@ def on_message(client, userdata, msg):
 
     if msg.topic == 'COLOCAR CANAL BROKER AQUI':
 
-        insertTemperature(message) # invoca o metodo de cadastro passando por parametro a temperatura recebida
+        insertUmidade(message) 
 
 try:
     print("[STATUS] Inicializando MQTT...")
@@ -46,5 +46,5 @@ try:
     client.loop_forever()
 
 except KeyboardInterrupt:
-    print "\nScript finalizado."
+    print ("\nScript finalizado.")
     sys.exit(0)

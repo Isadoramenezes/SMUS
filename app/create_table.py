@@ -9,6 +9,11 @@ cursor.execute("""
         umidade TEXT NOT NULL,
         created_at TIMESTAMP DEFAULT NOW
     );
+    CREATE TABLE login (
+        id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+        login TEXT NOT NULL,
+        password TEXT NOT NULL
+    )
 """)
 
 print('Tabela umidade criada com sucesso.')
