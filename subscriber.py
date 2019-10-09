@@ -3,7 +3,7 @@ import paho.mqtt.client as mqtt
 import sqlite3
 
 broker = "teste_pse"
-port = 8080
+port = 8880
 keppAlive = 60
 topic = 'COLOCAR CANAL BROKER AQUI'
 

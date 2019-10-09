@@ -1,5 +1,8 @@
 import sqlite3
 from flask import Flask, render_template
+from create_table import conn
+
+
 
 debug = True
 app   = Flask(__name__)
@@ -20,15 +23,12 @@ def getUmidade():
     conn.close()
 
 @app.route('/')
+
 def index():
-    # veja que abaixo passamos um atributo 'umidades' no metodo render_template
-    # isso nada mais e que estamos passando as temperaturas recuperadas para nosso html
-    # para que depois se possa mostrar os dados na tabela
     return render_template('index.html', umidades=getUmidade())
 
 if __name__ == "__main__":
     if debug:
-        app.run(host='0.0.0.0', port=80, debug=True)
+        app.run(host='0.0.0.0', port=8080, debug=True)
     else:
-        app.run(host='0.0.0.0', port=80)
-
+        app.run(host='0.0.0.0', port=8080)

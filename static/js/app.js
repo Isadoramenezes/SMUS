@@ -10,8 +10,8 @@
   const connectButton = document.getElementById('connect');
 
   const defaultSettings = {
-    broker: 'broker.iot-br.com',
-    topic : 'DZ/gauge/temperature',
+    broker: 'INSERIR BROKER',
+    topic : 'INSERIR CANAL DO BROKER AQUI',
     port  : 8880
   };
 
@@ -31,7 +31,7 @@
     return new Paho.MQTT.Client(
       defaultSettings.broker,
       parseInt(defaultSettings.port),
-      `DZ- ${ Date.now() }`
+      `${ Date.now() }`
     );
   };
 

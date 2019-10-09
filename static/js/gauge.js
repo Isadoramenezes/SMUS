@@ -2,25 +2,25 @@ const gauge = c3.generate({
   bindto: '#gauge',
   data  : {
     columns: [
-      ['temperature', 0]
+      ['umidade', 0]
     ],
     type   : 'gauge',
   },
   gauge : {
     label: {
       format: (value, ratio) => {
-        return value + ' ºC';
+        return value + ' %';
       },
       show  : false
     },
     min  : 0,
     max  : 50,
-    units: ' ºC',
+    units: ' %',
   },
   color : {
     pattern  : ['#227EAF', '#F97600'],
     threshold: {
-      unit  : 'ºC',
+      unit  : '%',
       max   : 50,
       values: [10, 30]
     }
@@ -30,12 +30,12 @@ const gauge = c3.generate({
   }
 });
 
-const getValueGauge = () => { return gauge.data.values('temperature')[0] };
+const getValueGauge = () => { return gauge.data.values('umidade')[0] };
 
 const setGaugeValue = (value) => {
   gauge.load({
     columns: [
-      ['temperature', value]
+      ['umidade', value]
     ]
   });
 };
