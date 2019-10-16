@@ -1,4 +1,5 @@
 #include <ESP8266WiFi.h>  
+#include <Wire.h>
  
 //defines
 #define SSID_REDE     "teste" 
