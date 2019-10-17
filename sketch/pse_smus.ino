@@ -6,7 +6,7 @@
 #define SENHA_REDE    "12345678" 
 #define INTERVALO_ENVIO_THINGSPEAK  30000  
  
-//constantes e variÃ¡veis globais
+//constantes e variáveis globais
 char EnderecoAPIThingSpeak[] = "api.thingspeak.com";
 String ChaveEscritaThingSpeak = "34VKCO5MTXCTUPLA";
 long lastConnectionTime; 
@@ -18,17 +18,17 @@ void FazConexaoWiFi(void);
 float FazLeituraUmidade(void);
  
 /*
- * ImplementaÃ§Ãµes
+ * Implementações
  */
  
-//FunÃ§Ã£o: envia informaÃ§Ãµes ao ThingSpeak
-//ParÃ¢metros: String com a  informaÃ§Ã£o a ser enviada
+//Função: envia informações ao ThingSpeak
+//Parâmetros: String com a  informação a ser enviada
 //Retorno: nenhum
 void EnviaInformacoesThingspeak(String StringDados)
 {
     if (client.connect(EnderecoAPIThingSpeak, 80))
     {         
-        //faz a requisiÃ§Ã£o HTTP ao ThingSpeak
+        //faz a requisição HTTP ao ThingSpeak
         client.print("POST /update HTTP/1.1\n");
         client.print("Host: api.thingspeak.com\n");
         client.print("Connection: close\n");
@@ -40,13 +40,13 @@ void EnviaInformacoesThingspeak(String StringDados)
         client.print(StringDados);
    
         lastConnectionTime = millis();
-        Serial.println("- InformaÃ§Ãµes enviadas ao ThingSpeak!");
+        Serial.println("- Informações enviadas ao ThingSpeak!");
      }   
 }
  
 void FazConexaoWiFi(void){
     client.stop();
-    Serial.println("Conectando-se Ã  rede WiFi...");
+    Serial.println("Conectando-se à rede WiFi...");
     Serial.println();  
     delay(1000);
     WiFi.begin(SSID_REDE, SENHA_REDE);
@@ -93,7 +93,7 @@ void loop(){
     int UmidadePercentualTruncada;
     char FieldUmidade[11];
      
-    //ForÃ§a desconexÃ£o ao ThingSpeak (se ainda estiver desconectado)
+    //Força desconexão ao ThingSpeak (se ainda estiver desconectado)
     if (client.connected()){
         client.stop();
         Serial.println("- Desconectado do ThingSpeak");
@@ -101,9 +101,9 @@ void loop(){
     }
  
     UmidadePercentualLida = FazLeituraUmidade();
-    UmidadePercentualTruncada = (int)UmidadePercentualLida; //trunca umidade como nÃºmero inteiro
+    UmidadePercentualTruncada = (int)UmidadePercentualLida; //trunca umidade como número inteiro
      
-    //verifica se estÃ¡ conectado no WiFi e se Ã© o momento de enviar dados ao ThingSpeak
+    //verifica se está conectado no WiFi e se é o momento de enviar dados ao ThingSpeak
     if(!client.connected() && 
       (millis() - lastConnectionTime > INTERVALO_ENVIO_THINGSPEAK)){
         sprintf(FieldUmidade,"field1=%d",UmidadePercentualTruncada);

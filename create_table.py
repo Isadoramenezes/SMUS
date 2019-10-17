@@ -1,9 +1,11 @@
 import sqlite3
 
-conn = sqlite3.connect('database.db')
+print(" ")
+print("........ FAZENDO CONEXÃO COM O BANCO ........")
+print(" ")
+conn = sqlite3.connect('static/database.db')
 cursor = conn.cursor()
 
-#Criar verificação de existência da tabela
 cursor.execute("""
     CREATE TABLE IF NOT EXISTS umidade (
         id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
@@ -12,19 +14,33 @@ cursor.execute("""
     );
 """)
 
-print('Tabela umidade criada com sucesso.')
-cursor.execute("""
-    CREATE TABLE IF NOT EXISTS usuarios (
-        id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
-        email TEXT NOT NULL,
-        senha TEXT NOT NULL
-    );
-""")
-print("tabela de usuário criada com sucesso")
+print('.......Tabela umidade criada com sucesso..........')
+print(" ")
+print(".......... CRIANDO TABELA USUARIOS ..........")
+print(" ")
 
 cursor.execute("""
-    INSERT INTO usuarios VALUES(1, 'admin@admin.com', '1234')
+  CREATE TABLE IF NOT EXISTS users (
+    id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    username TEXT NOT NULL,
+    password TEXT NOT NULL
+  );
 """)
-print("Usuário admin criado com sucesso")
+conn.commit()
 
+print(" ")
+print("............. INSERINDO ADMIN ...............")
+print(" ")
+
+cursor.execute("""
+  INSERT INTO users (id, username, password) 
+  VALUES (NULL, 'admin', 'admin')
+""")
+conn.commit()
+cursor.execute("""
+  INSERT INTO users (id, username, password) 
+  VALUES (NULL, 'teste', '1234')
+""")
+
+conn.commit()
 conn.close()

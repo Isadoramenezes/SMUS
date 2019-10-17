@@ -12,13 +12,18 @@
 
 	<link rel="stylesheet" type="text/css" href="../static/vendor/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../static/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="../static/vendor/animate/animate.css">
-	<link rel="stylesheet" type="text/css" href="../static/vendor/css-hamburgers/hamburgers.min.css">
-	<link rel="stylesheet" type="text/css" href="../static/vendor/select2/select2.min.css">
+
 	<link rel="stylesheet" type="text/css" href="../static/css/util.css">
 	<link rel="stylesheet" type="text/css" href="static/css/main.css">
 
-<a class="container-login100-form-btn" data-test-id="signup-button" href="static/login.html">Login</a>
+  <div class="container-login100-form-btn">
+    <div class="container">
+      <a  data-test-id="signup-button" href="/login">Login</a>
+    </div>
+    <div class="container">
+      <a  data-test-id="signup-button" href="/">Página Inicial</a>
+    </div>
+  </div>
   <!-- Load JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.min.js"
           type="text/javascript"></script>
@@ -35,7 +40,7 @@
 <div class="limiter">
 <div class="container-login100">
   <div class="wrap-login100">
-    <h3 class="center">Sistema de Monitoramento de Umidade de Solos v0.0.1</h3>
+    <h3 class="center">Sistema de Monitoramento de Umidade de Solos v0.0.2</h3>
     <h6 class="center">Esta aplicação foi baseada do artigo Integrando a Aplicação Web com o Banco de Dados de Douglas Zuqueto</h5>
     <br>
     <div class="row">
@@ -58,13 +63,6 @@
         </form>
       </div>
   </div>
-
-<!--   <div class="row">
-    <div class="center">
-      <div id='gauge'></div>
-    </div>
-  </div> -->
-
 
   <div class="row">
       <table class="striped">
