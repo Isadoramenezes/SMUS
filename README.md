@@ -22,7 +22,7 @@ Correções script do banco: persistência de tabela e criação de usuário adm
 ###### 10/10 -
 Alterações README
 ###### 14/10 -
-Autenticação de usuário (a parte https://repl.it/@IsadoraMenezes/authTest)
+Autenticação de usuário (a parte https://repl.it/@IsadoraMenezes/authTest)\
 Remontagem na protoboard
 ###### 15/10 -
 Alteração no Sketch\
