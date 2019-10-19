@@ -1,0 +1,200 @@
+2019-10-19 19:58:43: 	teste_smus (QoS 0)
+2019-10-19 19:58:43: Sending SUBACK to ESP8266Client
+2019-10-19 19:58:43: Socket error on client ESP8266Client, disconnecting.
+2019-10-19 19:58:44: New connection from 189.40.101.207 on port 17996.
+2019-10-19 19:58:44: New client connected from 189.40.101.207 as ESP8266Client (c1, k15, u'povafjjv').
+2019-10-19 19:58:44: No will message specified.
+2019-10-19 19:58:44: Sending CONNACK to ESP8266Client (0, 0)
+2019-10-19 19:58:44: Received SUBSCRIBE from ESP8266Client
+2019-10-19 19:58:44: 	teste_smus (QoS 0)
+2019-10-19 19:58:44: Sending SUBACK to ESP8266Client
+2019-10-19 19:58:45: Socket error on client ESP8266Client, disconnecting.
+2019-10-19 19:58:46: New connection from 189.40.101.207 on port 17996.
+2019-10-19 19:58:46: New client connected from 189.40.101.207 as ESP8266Client (c1, k15, u'povafjjv').
+2019-10-19 19:58:46: No will message specified.
+2019-10-19 19:58:46: Sending CONNACK to ESP8266Client (0, 0)
+2019-10-19 19:58:46: Received SUBSCRIBE from ESP8266Client
+2019-10-19 19:58:46: 	teste_smus (QoS 0)
+2019-10-19 19:58:46: Sending SUBACK to ESP8266Client
+2019-10-19 19:58:46: Socket error on client ESP8266Client, disconnecting.
+2019-10-19 19:58:47: New connection from 189.40.101.207 on port 17996.
+2019-10-19 19:58:47: New client connected from 189.40.101.207 as ESP8266Client (c1, k15, u'povafjjv').
+2019-10-19 19:58:47: No will message specified.
+2019-10-19 19:58:47: Sending CONNACK to ESP8266Client (0, 0)
+2019-10-19 19:58:47: Received SUBSCRIBE from ESP8266Client
+2019-10-19 19:58:47: 	teste_smus (QoS 0)
+2019-10-19 19:58:47: Sending SUBACK to ESP8266Client
+2019-10-19 19:58:47: Socket error on client ESP8266Client, disconnecting.
+2019-10-19 19:58:49: New connection from 189.40.101.207 on port 17996.
+2019-10-19 19:58:49: New client connected from 189.40.101.207 as ESP8266Client (c1, k15, u'povafjjv').
+2019-10-19 19:58:49: No will message specified.
+2019-10-19 19:58:49: Sending CONNACK to ESP8266Client (0, 0)
+2019-10-19 19:58:49: Received SUBSCRIBE from ESP8266Client
+2019-10-19 19:58:49: 	teste_smus (QoS 0)
+2019-10-19 19:58:49: Sending SUBACK to ESP8266Client
+2019-10-19 19:58:49: Socket error on client ESP8266Client, disconnecting.
+2019-10-19 19:58:50: New connection from 189.40.101.207 on port 17996.
+2019-10-19 19:58:50: New client connected from 189.40.101.207 as ESP8266Client (c1, k15, u'povafjjv').
+2019-10-19 19:58:50: No will message specified.
+2019-10-19 19:58:50: Sending CONNACK to ESP8266Client (0, 0)
+2019-10-19 19:58:50: Received SUBSCRIBE from ESP8266Client
+2019-10-19 19:58:50: 	teste_smus (QoS 0)
+2019-10-19 19:58:50: Sending SUBACK to ESP8266Client
+2019-10-19 19:58:50: Socket error on client ESP8266Client, disconnecting.
+2019-10-19 19:58:51: New connection from 189.40.101.207 on port 17996.
+2019-10-19 19:58:52: New client connected from 189.40.101.207 as ESP8266Client (c1, k15, u'povafjjv').
+2019-10-19 19:58:52: No will message specified.
+2019-10-19 19:58:52: Sending CONNACK to ESP8266Client (0, 0)
+2019-10-19 19:58:52: Received SUBSCRIBE from ESP8266Client
+2019-10-19 19:58:52: 	teste_smus (QoS 0)
+2019-10-19 19:58:52: Sending SUBACK to ESP8266Client
+2019-10-19 19:58:52: Socket error on client ESP8266Client, disconnecting.
+2019-10-19 19:58:53: New connection from 189.40.101.207 on port 17996.
+2019-10-19 19:58:53: New client connected from 189.40.101.207 as ESP8266Client (c1, k15, u'povafjjv').
+2019-10-19 19:58:53: No will message specified.
+2019-10-19 19:58:53: Sending CONNACK to ESP8266Client (0, 0)
+2019-10-19 19:58:53: Received SUBSCRIBE from ESP8266Client
+2019-10-19 19:58:53: 	teste_smus (QoS 0)
+2019-10-19 19:58:53: Sending SUBACK to ESP8266Client
+2019-10-19 19:58:53: Socket error on client ESP8266Client, disconnecting.
+2019-10-19 19:58:54: New connection from 189.40.101.207 on port 17996.
+2019-10-19 19:58:54: New client connected from 189.40.101.207 as ESP8266Client (c1, k15, u'povafjjv').
+2019-10-19 19:58:54: No will message specified.
+2019-10-19 19:58:54: Sending CONNACK to ESP8266Client (0, 0)
+2019-10-19 19:58:55: Received SUBSCRIBE from ESP8266Client
+2019-10-19 19:58:55: 	teste_smus (QoS 0)
+2019-10-19 19:58:55: Sending SUBACK to ESP8266Client
+2019-10-19 19:58:55: Socket error on client ESP8266Client, disconnecting.
+2019-10-19 19:58:56: New connection from 189.40.101.207 on port 17996.
+2019-10-19 19:58:56: New client connected from 189.40.101.207 as ESP8266Client (c1, k15, u'povafjjv').
+2019-10-19 19:58:56: No will message specified.
+2019-10-19 19:58:56: Sending CONNACK to ESP8266Client (0, 0)
+2019-10-19 19:58:56: Received SUBSCRIBE from ESP8266Client
+2019-10-19 19:58:56: 	teste_smus (QoS 0)
+2019-10-19 19:58:56: Sending SUBACK to ESP8266Client
+2019-10-19 19:58:56: Socket error on client ESP8266Client, disconnecting.
+2019-10-19 19:58:57: New connection from 189.40.101.207 on port 17996.
+2019-10-19 19:58:57: New client connected from 189.40.101.207 as ESP8266Client (c1, k15, u'povafjjv').
+2019-10-19 19:58:57: No will message specified.
+2019-10-19 19:58:57: Sending CONNACK to ESP8266Client (0, 0)
+2019-10-19 19:58:57: Received SUBSCRIBE from ESP8266Client
+2019-10-19 19:58:57: 	teste_smus (QoS 0)
+2019-10-19 19:58:57: Sending SUBACK to ESP8266Client
+2019-10-19 19:58:58: Socket error on client ESP8266Client, disconnecting.
+2019-10-19 19:58:59: New connection from 189.40.101.207 on port 17996.
+2019-10-19 19:58:59: New client connected from 189.40.101.207 as ESP8266Client (c1, k15, u'povafjjv').
+2019-10-19 19:58:59: No will message specified.
+2019-10-19 19:58:59: Sending CONNACK to ESP8266Client (0, 0)
+2019-10-19 19:58:59: Received SUBSCRIBE from ESP8266Client
+2019-10-19 19:58:59: 	teste_smus (QoS 0)
+2019-10-19 19:58:59: Sending SUBACK to ESP8266Client
+2019-10-19 19:58:59: Socket error on client ESP8266Client, disconnecting.
+2019-10-19 19:59:00: New connection from 189.40.101.207 on port 17996.
+2019-10-19 19:59:00: New client connected from 189.40.101.207 as ESP8266Client (c1, k15, u'povafjjv').
+2019-10-19 19:59:00: No will message specified.
+2019-10-19 19:59:00: Sending CONNACK to ESP8266Client (0, 0)
+2019-10-19 19:59:00: Received SUBSCRIBE from ESP8266Client
+2019-10-19 19:59:00: 	teste_smus (QoS 0)
+2019-10-19 19:59:00: Sending SUBACK to ESP8266Client
+2019-10-19 19:59:00: Socket error on client ESP8266Client, disconnecting.
+2019-10-19 19:59:02: New connection from 189.40.101.207 on port 17996.
+2019-10-19 19:59:02: New client connected from 189.40.101.207 as ESP8266Client (c1, k15, u'povafjjv').
+2019-10-19 19:59:02: No will message specified.
+2019-10-19 19:59:02: Sending CONNACK to ESP8266Client (0, 0)
+2019-10-19 19:59:02: Received SUBSCRIBE from ESP8266Client
+2019-10-19 19:59:02: 	teste_smus (QoS 0)
+2019-10-19 19:59:02: Sending SUBACK to ESP8266Client
+2019-10-19 19:59:02: Socket error on client ESP8266Client, disconnecting.
+2019-10-19 19:59:03: New connection from 189.40.101.207 on port 17996.
+2019-10-19 19:59:03: New client connected from 189.40.101.207 as ESP8266Client (c1, k15, u'povafjjv').
+2019-10-19 19:59:03: No will message specified.
+2019-10-19 19:59:03: Sending CONNACK to ESP8266Client (0, 0)
+2019-10-19 19:59:03: Received SUBSCRIBE from ESP8266Client
+2019-10-19 19:59:03: 	teste_smus (QoS 0)
+2019-10-19 19:59:03: Sending SUBACK to ESP8266Client
+2019-10-19 19:59:03: Socket error on client ESP8266Client, disconnecting.
+2019-10-19 19:59:05: New connection from 189.40.101.207 on port 17996.
+2019-10-19 19:59:05: New client connected from 189.40.101.207 as ESP8266Client (c1, k15, u'povafjjv').
+2019-10-19 19:59:05: No will message specified.
+2019-10-19 19:59:05: Sending CONNACK to ESP8266Client (0, 0)
+2019-10-19 19:59:05: Received SUBSCRIBE from ESP8266Client
+2019-10-19 19:59:05: 	teste_smus (QoS 0)
+2019-10-19 19:59:05: Sending SUBACK to ESP8266Client
+2019-10-19 19:59:05: Socket error on client ESP8266Client, disconnecting.
+2019-10-19 19:59:05: Received PINGREQ from cloudmqtt-ws-ui-0.9273899491257263
+2019-10-19 19:59:05: Sending PINGRESP to cloudmqtt-ws-ui-0.9273899491257263
+2019-10-19 19:59:05: Received PINGREQ from cloudmqtt-ws-ui-0.9273899491257263
+2019-10-19 19:59:05: Sending PINGRESP to cloudmqtt-ws-ui-0.9273899491257263
+2019-10-19 19:59:06: New connection from 189.40.101.207 on port 17996.
+2019-10-19 19:59:06: New client connected from 189.40.101.207 as ESP8266Client (c1, k15, u'povafjjv').
+2019-10-19 19:59:06: No will message specified.
+2019-10-19 19:59:06: Sending CONNACK to ESP8266Client (0, 0)
+2019-10-19 19:59:06: Received SUBSCRIBE from ESP8266Client
+2019-10-19 19:59:06: 	teste_smus (QoS 0)
+2019-10-19 19:59:06: Sending SUBACK to ESP8266Client
+2019-10-19 19:59:06: Socket error on client ESP8266Client, disconnecting.
+2019-10-19 19:59:07: New connection from 189.40.101.207 on port 17996.
+2019-10-19 19:59:07: New client connected from 189.40.101.207 as ESP8266Client (c1, k15, u'povafjjv').
+2019-10-19 19:59:07: No will message specified.
+2019-10-19 19:59:07: Sending CONNACK to ESP8266Client (0, 0)
+2019-10-19 19:59:08: Received SUBSCRIBE from ESP8266Client
+2019-10-19 19:59:08: 	teste_smus (QoS 0)
+2019-10-19 19:59:08: Sending SUBACK to ESP8266Client
+2019-10-19 19:59:08: Socket error on client ESP8266Client, disconnecting.
+2019-10-19 19:59:09: New connection from 189.40.101.207 on port 17996.
+2019-10-19 19:59:09: New client connected from 189.40.101.207 as ESP8266Client (c1, k15, u'povafjjv').
+2019-10-19 19:59:09: No will message specified.
+2019-10-19 19:59:09: Sending CONNACK to ESP8266Client (0, 0)
+2019-10-19 19:59:09: Received SUBSCRIBE from ESP8266Client
+2019-10-19 19:59:09: 	teste_smus (QoS 0)
+2019-10-19 19:59:09: Sending SUBACK to ESP8266Client
+2019-10-19 19:59:09: Socket error on client ESP8266Client, disconnecting.
+2019-10-19 19:59:10: New connection from 189.40.101.207 on port 17996.
+2019-10-19 19:59:10: New client connected from 189.40.101.207 as ESP8266Client (c1, k15, u'povafjjv').
+2019-10-19 19:59:10: No will message specified.
+2019-10-19 19:59:10: Sending CONNACK to ESP8266Client (0, 0)
+2019-10-19 19:59:10: Received SUBSCRIBE from ESP8266Client
+2019-10-19 19:59:10: 	teste_smus (QoS 0)
+2019-10-19 19:59:10: Sending SUBACK to ESP8266Client
+2019-10-19 19:59:11: Socket error on client ESP8266Client, disconnecting.
+2019-10-19 19:59:12: New connection from 189.40.101.207 on port 17996.
+2019-10-19 19:59:12: New client connected from 189.40.101.207 as ESP8266Client (c1, k15, u'povafjjv').
+2019-10-19 19:59:12: No will message specified.
+2019-10-19 19:59:12: Sending CONNACK to ESP8266Client (0, 0)
+2019-10-19 19:59:12: Received SUBSCRIBE from ESP8266Client
+2019-10-19 19:59:12: 	teste_smus (QoS 0)
+2019-10-19 19:59:12: Sending SUBACK to ESP8266Client
+2019-10-19 19:59:12: Socket error on client ESP8266Client, disconnecting.
+2019-10-19 19:59:12: Received DISCONNECT from cloudmqtt-ws-ui-0.9273899491257263
+2019-10-19 19:59:12: Client cloudmqtt-ws-ui-0.9273899491257263 disconnected.
+2019-10-19 19:59:13: New connection from 189.40.101.207 on port 17996.
+2019-10-19 19:59:13: New client connected from 189.40.101.207 as ESP8266Client (c1, k15, u'povafjjv').
+2019-10-19 19:59:13: No will message specified.
+2019-10-19 19:59:13: Sending CONNACK to ESP8266Client (0, 0)
+2019-10-19 19:59:13: Received SUBSCRIBE from ESP8266Client
+2019-10-19 19:59:13: 	teste_smus (QoS 0)
+2019-10-19 19:59:13: Sending SUBACK to ESP8266Client
+2019-10-19 19:59:14: Socket error on client ESP8266Client, disconnecting.
+2019-10-19 19:59:14: New client connected from 179.235.161.151 as cloudmqtt-ws-ui-0.1876775346646542 (c1, k60, u'povafjjv').
+2019-10-19 19:59:14: No will message specified.
+2019-10-19 19:59:14: Sending CONNACK to cloudmqtt-ws-ui-0.1876775346646542 (0, 0)
+2019-10-19 19:59:14: Received SUBSCRIBE from cloudmqtt-ws-ui-0.1876775346646542
+2019-10-19 19:59:14: 	# (QoS 0)
+2019-10-19 19:59:14: Sending SUBACK to cloudmqtt-ws-ui-0.1876775346646542
+2019-10-19 19:59:15: New connection from 189.40.101.207 on port 17996.
+2019-10-19 19:59:15: New client connected from 189.40.101.207 as ESP8266Client (c1, k15, u'povafjjv').
+2019-10-19 19:59:15: No will message specified.
+2019-10-19 19:59:15: Sending CONNACK to ESP8266Client (0, 0)
+2019-10-19 19:59:15: Received SUBSCRIBE from ESP8266Client
+2019-10-19 19:59:15: 	teste_smus (QoS 0)
+2019-10-19 19:59:15: Sending SUBACK to ESP8266Client
+2019-10-19 19:59:15: Socket error on client ESP8266Client, disconnecting.
+2019-10-19 19:59:16: New connection from 189.40.101.207 on port 17996.
+2019-10-19 19:59:16: New client connected from 189.40.101.207 as ESP8266Client (c1, k15, u'povafjjv').
+2019-10-19 19:59:16: No will message specified.
+2019-10-19 19:59:16: Sending CONNACK to ESP8266Client (0, 0)
+2019-10-19 19:59:16: Received SUBSCRIBE from ESP8266Client
+2019-10-19 19:59:16: 	teste_smus (QoS 0)
+2019-10-19 19:59:16: Sending SUBACK to ESP8266Client
+2019-10-19 19:59:16: Socket error on client ESP8266Client, disconnecting.
+2019-10-19 19:59:18: New connection from 189.40.101.207 on port 17996.
