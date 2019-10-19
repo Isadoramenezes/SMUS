@@ -22,7 +22,7 @@ Correções script do banco: persistência de tabela e criação de usuário adm
 ###### 10/10 -
 Alterações README
 ###### 14/10 -
-Autenticação de usuário (a parte https://repl.it/@IsadoraMenezes/authTest)\
+Autenticação de usuário (a parte https://repl.it/@IsadoraMenezes/authTest) \
 Remontagem na protoboard
 ###### 15/10 -
 Alteração no Sketch\
@@ -32,3 +32,5 @@ Pesquisa para elaboração do relatório
 ###### 17/10 -
 Merge entre projeto de Autenticação e projeto principal\
 Reorganização dos arquivos para atender ao padrão Flask
+###### 19/10 -
+Feita a conexão com o broker CloudMQTT, falha no envio das informações por hora.
