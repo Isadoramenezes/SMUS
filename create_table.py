@@ -1,23 +1,23 @@
 import sqlite3
 
-print(" ")
-print("........ FAZENDO CONEXÃO COM O BANCO ........")
-print(" ")
-conn = sqlite3.connect('static/database.db')
+
+conn = sqlite3.connect('database.db')
 cursor = conn.cursor()
+
+print(" ")
+print(".................. BANCO CRIADO ...................")
+print(" ")
 
 cursor.execute("""
     CREATE TABLE IF NOT EXISTS umidade (
-        id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
-        umidade TEXT NOT NULL,
-        created_at TIMESTAMP DEFAULT NOW
+        entry_id INTEGER NOT NULL,
+        created_at BLOB NOT NULL,
+        field1 INTEGER NOT NULL
     );
 """)
 
-print('.......Tabela umidade criada com sucesso..........')
-print(" ")
-print(".......... CRIANDO TABELA USUARIOS ..........")
-print(" ")
+print('...............Tabela Umidade criada ..............')
+
 
 cursor.execute("""
   CREATE TABLE IF NOT EXISTS users (
@@ -27,20 +27,17 @@ cursor.execute("""
   );
 """)
 conn.commit()
+print(" ")
+print("........... Tabela de Usuários criadaS ...........")
+print(" ")
 
-print(" ")
-print("............. INSERINDO ADMIN ...............")
-print(" ")
 
 cursor.execute("""
   INSERT INTO users (id, username, password) 
   VALUES (NULL, 'admin', 'admin')
 """)
 conn.commit()
-cursor.execute("""
-  INSERT INTO users (id, username, password) 
-  VALUES (NULL, 'teste', '1234')
-""")
-
-conn.commit()
+print(" ")
+print("................. ADMIN Inserido .................")
+print(" ")
 conn.close()

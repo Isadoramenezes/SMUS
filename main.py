@@ -1,7 +1,8 @@
 import sqlite3
 from flask import Flask, render_template, redirect, url_for, request, g
-import create_table
 from create_table import conn
+import create_table
+import subscriber
 
 debug = True
 app   = Flask(__name__)
@@ -9,7 +10,7 @@ app   = Flask(__name__)
 ############### VALIDATE LOGIN FUNCTION ######################
 ##############################################################
 def validate(username, password):
-    conn = sqlite3.connect('static/database.db')
+    conn = sqlite3.connect('database.db')
     completion = False
     with conn:
                 cursor = conn.cursor()
@@ -32,7 +33,7 @@ def login():
         password = request.form['password']
         completion = validate(username, password)
         if completion ==False:
-            error = 'Invalid Credentials. Please try again.'
+            error = 'Usuário ou senha inválidos. Por favor, tente novamente.'
         else:
             return redirect(url_for('secret'))
     return render_template('login.html', error=error)
@@ -43,13 +44,13 @@ def secret():
     
 # funcao responsavel por efetuar a leitura do banco de dados e nos retornar as temperaturas cadastradas
 def getUmidade():
-    conn   = sqlite3.connect('static/database.db')
+    conn   = sqlite3.connect('database.db')
     cursor = conn.cursor()
 
     cursor.execute("""
-        SELECT id, umidade, strftime('%d/%m/%Y %H:%M:%S', created_at) as created_at FROM umidade
-        ORDER BY id DESC
-        LIMIT 50;
+        SELECT entry_id, field1, created_at FROM umidade
+        ORDER BY entry_id DESC
+        LIMIT 10;
     """)
 
     return cursor.fetchall()
@@ -59,7 +60,7 @@ def getUmidade():
 @app.route('/')
 
 def index():
-    return render_template('index.html', umidades=getUmidade())
+    return render_template('index.html', umidade=getUmidade())
 
 if __name__ == "__main__":
     if debug:
