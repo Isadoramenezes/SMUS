@@ -4,6 +4,7 @@ from create_table import conn
 import create_table
 import subscriber
 
+
 debug = True
 app   = Flask(__name__)
 ##############################################################
@@ -50,7 +51,7 @@ def getUmidade():
     cursor.execute("""
         SELECT entry_id, field1, created_at FROM umidade
         ORDER BY entry_id DESC
-        LIMIT 10;
+        LIMIT 50;
     """)
 
     return cursor.fetchall()

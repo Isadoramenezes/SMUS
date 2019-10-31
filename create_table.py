@@ -28,7 +28,7 @@ cursor.execute("""
 """)
 conn.commit()
 print(" ")
-print("........... Tabela de Usuários criadaS ...........")
+print("........... Tabela de Usuários criada .............")
 print(" ")
 
 
@@ -38,6 +38,6 @@ cursor.execute("""
 """)
 conn.commit()
 print(" ")
-print("................. ADMIN Inserido .................")
+print(".................. ADMIN Inserido ..................")
 print(" ")
 conn.close()

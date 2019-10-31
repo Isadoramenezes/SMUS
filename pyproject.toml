@@ -1,0 +1,11 @@
+[tool]
+[tool.poetry]
+name = "root"
+version = "0.0.0"
+
+[tool.poetry.dependencies]
+python = "*"
+flask = "==1.1.1"
+flask-ext = "==0.1"
+flask-login = "==0.4.1"
+sqlalchemy-nuodb = "==2.3.1"
