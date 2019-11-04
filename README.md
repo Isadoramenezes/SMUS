@@ -50,4 +50,6 @@ Estudo para emissão de alerta e criação de dashboard admin: https://repl.it/@
 ##### 31/10 -
 Execução de testes e implementação da primeira versão da emissão de alerta, com tratamento de dados do banco: https://repl.it/@IsadoraMenezes/TesteAlerta
 ##### 01/11 - 
+Estudo para construção do controle de acesso
+##### 01/11 - 
 

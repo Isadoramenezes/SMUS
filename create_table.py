@@ -1,13 +1,11 @@
 import sqlite3
 
-
 conn = sqlite3.connect('database.db')
 cursor = conn.cursor()
 
 print(" ")
 print(".................. BANCO CRIADO ...................")
 print(" ")
-
 cursor.execute("""
     CREATE TABLE IF NOT EXISTS umidade (
         entry_id INTEGER NOT NULL,
@@ -15,10 +13,7 @@ cursor.execute("""
         field1 INTEGER NOT NULL
     );
 """)
-
 print('...............Tabela Umidade criada ..............')
-
-
 cursor.execute("""
   CREATE TABLE IF NOT EXISTS users (
     id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
@@ -31,15 +26,5 @@ cursor.execute("""
 conn.commit()
 print(" ")
 print("........... Tabela de Usuários criada .............")
-print(" ")
-
-
-''' cursor.execute("""
-  INSERT INTO users (id, username, password) 
-  VALUES (NULL, 'admin', 'admin')
-""")
-conn.commit() '''
-print(" ")
-print(".................. ADMIN Inserido ..................")
 print(" ")
 conn.close()
