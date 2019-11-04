@@ -1,78 +1,24 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-	<title>Login SMUS</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<script type="text/javascript" src="SQLite.js"></script>
-
-	<link rel="icon" type="image/png" href="static/images/marca_smus.jpeg"/>
-	<link rel="stylesheet" type="text/css" href="static/vendor/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="static/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="static/vendor/animate/animate.css">
-	<link rel="stylesheet" type="text/css" href="static/vendor/css-hamburgers/hamburgers.min.css">
-	<link rel="stylesheet" type="text/css" href="static/vendor/select2/select2.min.css">
-	<link rel="stylesheet" type="text/css" href="static/css/util.css">
-	<link rel="stylesheet" type="text/css" href="static/css/main.css">
-
-  <div class="container-login100-form-btn">
-    <div class="container">
-      <a  data-test-id="signup-button" href="/login">Login</a>
-    </div>
-    <div class="container">
-      <a  data-test-id="signup-button" href="/">Página Inicial</a>
-    </div>
-  </div>
-
-</head>
-<body>
-	
-	<div class="limiter">
-		<div class="container-login100">
-			<div class="wrap-login100">
-				<div class="login100-pic js-tilt" data-tilt>
-          <img src="static/images/marca_smus.jpeg" alt="IMG">
-				</div>
-        <form class="login100-form validate-form" action="" method="post">
-
-          <span class="login100-form-title">
-            Faça Login
-          </span>
-
-          <div>
-            <input type="text" placeholder="Username" name="username" value="{{
-              request.form.username }}">
-            <span class="focus-input100"></span>
-            <input type="password" placeholder="Password" name="password" value="{{
-              request.form.password }}">
-
-            <div class="container-login100-form-btn">
-              <input class="btn btn-default" type="submit" value="Login">
-            </div>
-          </div>
-        </form>
-        
-        {% if error %}
-          <p class="error"><strong>Error:</strong> {{ error }}
-        {% endif %}
+{% extends 'base.html' %}
+  {% block content %}
+    
+    <form class="login100-form validate-form" action="" method="post">
+      <span class="login100-form-title">
+        Faça Login
+      </span>
+      <div>
+        <input type="text" placeholder="Usuário" name="username" value="{{
+          request.form.username }}">
+        <span class="focus-input100"></span>
+        <input type="password" placeholder="Senha" name="password" value="{{
+          request.form.password }}">
+        <div class="container-login100-form-btn">
+          <input class="btn btn-default" type="submit" value="Login">
+        </div>
       </div>
-		</div> 
-  </div>   
-  
+    </form>
+        
+    {% if error %}
+      <p class="error"><strong>Error:</strong> {{ error }}
+    {% endif %}
 
-	<script src="static/vendor/jquery/jquery-3.2.1.min.js"></script>
-
-	<script src="static/vendor/bootstrap/js/popper.js"></script>
-	<script src="static/vendor/bootstrap/js/bootstrap.min.js"></script>
-	<script src="static/vendor/select2/select2.min.js"></script>
-	<script src="static/vendor/tilt/tilt.jquery.min.js"></script>
-	<script >
-		$('.js-tilt').tilt({
-			scale: 1.01
-		})
-	</script>
-	<script src="static/js/main.js"></script>
-
-</body>
-</html>
+{% endblock %}

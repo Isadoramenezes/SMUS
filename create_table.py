@@ -22,6 +22,8 @@ print('...............Tabela Umidade criada ..............')
 cursor.execute("""
   CREATE TABLE IF NOT EXISTS users (
     id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    email TEXT NOT NULL,
     username TEXT NOT NULL,
     password TEXT NOT NULL
   );
@@ -32,11 +34,11 @@ print("........... Tabela de Usuários criada .............")
 print(" ")
 
 
-cursor.execute("""
+''' cursor.execute("""
   INSERT INTO users (id, username, password) 
   VALUES (NULL, 'admin', 'admin')
 """)
-conn.commit()
+conn.commit() '''
 print(" ")
 print(".................. ADMIN Inserido ..................")
 print(" ")

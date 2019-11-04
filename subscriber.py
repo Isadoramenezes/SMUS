@@ -4,8 +4,8 @@ import sqlite3
 import functools
 import operator
 
-alerta = input("Defina um Alerta: ")
-alerta = int(alerta)
+
+alerta = 0
 
 conn = sqlite3.connect('database.db')
 cursor = conn.cursor()

@@ -44,11 +44,10 @@ Resolução do sql para inserção de dados no banco (feitos em projeto a parte:
 Inserção de dados no banco ainda com problemas oriundos da plataforma\
 Organização de projetos associados em https://repl.it/repls/folder/PSE \
 Captura das informações do banco e exibição na página inicial
-##### 30/10 - 
-Tentativa de correção de informações duplicadas [em andamento] \
-Estudo para emissão de alerta e criação de dashboard admin: https://repl.it/@IsadoraMenezes/testeNiveisDeAcesso,
-https://repl.it/@IsadoraMenezes/novoTesteControleDeAcesso,
-https://repl.it/@IsadoraMenezes/dash
-
+##### 30/10 -
+Tentativa de correção de informações duplicadas [em andamento]
+Estudo para emissão de alerta e criação de dashboard admin: https://repl.it/@IsadoraMenezes/testeNiveisDeAcesso, https://repl.it/@IsadoraMenezes/novoTesteControleDeAcesso, https://repl.it/@IsadoraMenezes/dash
 ##### 31/10 -
 Execução de testes e implementação da primeira versão da emissão de alerta, com tratamento de dados do banco: https://repl.it/@IsadoraMenezes/TesteAlerta
+##### 01/11 - 
+
