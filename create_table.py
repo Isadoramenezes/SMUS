@@ -13,6 +13,10 @@ cursor.execute("""
         field1 INTEGER NOT NULL
     );
 """)
+
+cursor.execute("""
+  INSERT INTO umidade(entry_id, created_at, field1) VALUES (0, '2019-11-02T23:09:54Z', 0)
+""")
 print('...............Tabela Umidade criada ..............')
 cursor.execute("""
   CREATE TABLE IF NOT EXISTS users (
@@ -20,7 +24,8 @@ cursor.execute("""
     name TEXT NOT NULL,
     email TEXT NOT NULL,
     username TEXT NOT NULL,
-    password TEXT NOT NULL
+    password TEXT NOT NULL,
+    acesso INT NOT NULL
   );
 """)
 conn.commit()

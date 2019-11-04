@@ -8,6 +8,7 @@ debug = True
 app   = Flask(__name__)
 
 class RegisterForm(Form):
+  acesso = StringField('Tipo de Usuario', [validators.Length(min = 0, max = 1, message='escolha 0 para admin e 1 para morador')])
   name = StringField('Nome', [validators.Length(min=1, max=50)])
   username = StringField('Nome de usuario', [validators.Length(min=4, max=25)])
   email = StringField('Email', [validators.Length(min=6, max=50)])
@@ -21,6 +22,7 @@ class RegisterForm(Form):
 def register():
   form = RegisterForm(request.form)
   if request.method == 'POST' and form.validate():
+    acesso = form.acesso.data
     name = form.name.data
     email = form.email.data
     username = form.username.data
@@ -28,8 +30,8 @@ def register():
 
     conn = sqlite3.connect('database.db')
     cursor = conn.cursor()
-    sql = "INSERT INTO users(name, email, username, password) VALUES(?, ?, ?, ?);"
-    cursor.execute(sql, (str(name), str(email), str(username), str(password)))
+    sql = "INSERT INTO users(name, email, username, password, acesso) VALUES(?, ?, ?, ?, ?);"
+    cursor.execute(sql, (str(name), str(email), str(username), str(password), acesso))
     conn.commit()
     cursor.close()
     
@@ -79,7 +81,7 @@ def getUmidade():
   cursor.execute("""
       SELECT entry_id, field1, created_at FROM umidade
       ORDER BY entry_id DESC
-      LIMIT 50;
+      LIMIT 10;
   """)
   return cursor.fetchall()
   conn.close()

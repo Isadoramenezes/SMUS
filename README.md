@@ -45,11 +45,18 @@ Inserção de dados no banco ainda com problemas oriundos da plataforma\
 Organização de projetos associados em https://repl.it/repls/folder/PSE \
 Captura das informações do banco e exibição na página inicial
 ##### 30/10 -
-Tentativa de correção de informações duplicadas [em andamento]
+Tentativa de correção de informações duplicadas [concluído em 04.11] \
 Estudo para emissão de alerta e criação de dashboard admin: https://repl.it/@IsadoraMenezes/testeNiveisDeAcesso, https://repl.it/@IsadoraMenezes/novoTesteControleDeAcesso, https://repl.it/@IsadoraMenezes/dash
 ##### 31/10 -
 Execução de testes e implementação da primeira versão da emissão de alerta, com tratamento de dados do banco: https://repl.it/@IsadoraMenezes/TesteAlerta
 ##### 01/11 - 
 Estudo para construção do controle de acesso
-##### 01/11 - 
+##### 03/11 - 
+Primeira versão da implementação do registro de usuários (falhou) \
+Teste da função validate(login) apontou falha na validação [passando sem senha]
+##### 04/11 -
+Implementação correta do registro de usuários \
+Aplicação de Extends nos templates (reuso de código) \
+Correção na validação de login \
+Correção da inserção de dados duplicados no banco (alterações no subscriber)
 
