@@ -58,14 +58,18 @@ void FazConexaoWiFi(void){
 }
 
 float FazLeituraUmidade(void){
-    int ValorADC;
-    float UmidadePercentual;
-
-     ValorADC = analogRead(0);   //978 -> 3,3V
+    float ValorADC, IntervaloUmidade, DiferencaUmidade, UmidadePercentual;
+    double Razao;
+    
+     ValorADC = analogRead(0);   
      Serial.print("[Leitura ADC] ");
      Serial.println(ValorADC);  
-
-     UmidadePercentual = 100 * ((978-(float)ValorADC) / 978);
+     //UmidadeMinima = 1024;
+     //UmidadeMaxima = 520;
+     IntervaloUmidade = 500;
+     DiferencaUmidade = 1024 - ValorADC;
+     Razao = DiferencaUmidade/IntervaloUmidade;
+     UmidadePercentual = 100*(Razao);
      Serial.print("[Umidade Percentual] ");
      Serial.print(UmidadePercentual);
      Serial.println("%");
