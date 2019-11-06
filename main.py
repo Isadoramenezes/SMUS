@@ -1,8 +1,8 @@
 import sqlite3
-from flask import Flask, render_template, flash, redirect, url_for, request, logging
-from wtforms import Form, StringField, TextAreaField, PasswordField, validators
+from flask import Flask, render_template, flash, redirect, url_for, request
+from wtforms import Form, StringField, PasswordField, validators
 import create_table
-import subscriber
+from subscriber import subscriber, sinalAlerta
 
 debug = True
 app   = Flask(__name__)
@@ -70,12 +70,19 @@ def login():
 def secret():
   return "Você está logado!"
 
+oposto = not sinalAlerta
+
+@app.route('/alert')
+def alerta():
+
+  return render_template('alert.html', umidade=getUmidade(), atualizacao = subscriber(), status = oposto) 
+
 @app.route('/base')
 def base():
   return render_template('base.html')
 
 def getUmidade():
-  conn   = sqlite3.connect('database.db')
+  conn   = sqlite3.connect('database.db',)
   cursor = conn.cursor()
 
   cursor.execute("""
@@ -88,7 +95,7 @@ def getUmidade():
 
 @app.route('/')
 def index():
-  return render_template('index.html', umidade=getUmidade())
+  return render_template('index.html', umidade=getUmidade(), atualizacao = subscriber(), status = sinalAlerta)
 
 if __name__ == "__main__":
   app.secret_key = 'super secret key'

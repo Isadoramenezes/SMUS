@@ -59,4 +59,8 @@ Implementação correta do registro de usuários \
 Aplicação de Extends nos templates (reuso de código) \
 Correção na validação de login \
 Correção da inserção de dados duplicados no banco (alterações no subscriber)
-
+##### 05/11 -
+Correção do problema de leitura do sensor \
+Correção na medição da leitura
+##### 06/11 -
+Ajustes na emissão do alerta [em andamento]

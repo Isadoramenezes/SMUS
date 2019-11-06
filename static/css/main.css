@@ -171,6 +171,41 @@ iframe {
   background: linear-gradient(-135deg, #50c864, #4158d0);
 }
 
+.container-login200 {
+  width: 100%;  
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: #c75353;
+  background: -webkit-linear-gradient(-135deg, #e28d5c, #d05641);
+  background: -o-linear-gradient(-135deg, #f18b5c, #c7dd4a);
+  background: -moz-linear-gradient(-135deg, #c79539, #08103a);
+  background: linear-gradient(-135deg, #ecd155, #d05241);
+}
+.wrap-login200 {
+  width: 960px;
+  background: rgb(245, 243, 243);
+  border-radius: 10px;
+  overflow: hidden;
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+  padding: 177px 130px 33px 95px;
+}
+
 .wrap-login100 {
   width: 960px;
   background: #fff;
@@ -463,12 +498,16 @@ iframe {
 }
 
 .table {
-    border: 1px solid greenyellow;
-    width: 50% !important; /*Importante manter o !important rs */
+    border: 2px solid rgb(47, 255, 47);
+    width: 50% !important; 
     margin: auto;
 }
 
 .table-status {
     margin-top: 20px;
     margin-bottom: 20px !important;
+}
+
+.novocentro {
+  margin: auto;
 }
