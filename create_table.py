@@ -28,6 +28,18 @@ cursor.execute("""
     acesso INT NOT NULL
   );
 """)
+cursor.execute("""
+    CREATE TABLE IF NOT EXISTS controle_de_nivel (
+        id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+        nivel_alerta INTEGER NOT NULL,
+        Timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
+    );
+""")
+
+cursor.execute("""
+  INSERT INTO controle_de_nivel(nivel_alerta) VALUES (100)
+""")
+
 conn.commit()
 print(" ")
 print("........... Tabela de Usuários criada .............")

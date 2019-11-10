@@ -1,8 +1,8 @@
 import sqlite3
 from flask import Flask, render_template, flash, redirect, url_for, request
-from wtforms import Form, StringField, PasswordField, validators
+from wtforms import Form, StringField, PasswordField, validators, IntegerField
 import create_table
-from subscriber import subscriber, sinalAlerta
+from subscriber import subscriber
 
 debug = True
 app   = Flask(__name__)
@@ -39,6 +39,26 @@ def register():
     return redirect(url_for('login'))
   return render_template('register.html', form=form)
 
+class Alerta(Form):
+  nivelAlerta = IntegerField('nivelAlerta', [validators.required(message='Escolha um valor entre 0 e 100')])
+
+@app.route('/alertManager', methods = ['GET', 'POST'])
+def alertManager():
+  form = Alerta(request.form)
+  novoAlerta = Alerta()
+  if request.method == 'POST' and form.validate():
+    novoAlerta = form.nivelAlerta.data
+    conn = sqlite3.connect('database.db')
+    cursor = conn.cursor()
+    sql_alerta ='INSERT INTO controle_de_nivel (nivel_alerta) VALUES (%s)' % (novoAlerta)
+    print("SQL ALERTA")
+    print(sql_alerta)
+    cursor.execute(sql_alerta)
+    conn.commit()
+    cursor.close
+    return redirect(url_for('alertManager'))
+  return render_template('alertManager.html', form=novoAlerta)
+
 def validate(username, password):
   conn = sqlite3.connect('database.db')
   completion = False
@@ -70,16 +90,21 @@ def login():
 def secret():
   return "Você está logado!"
 
-oposto = not sinalAlerta
 
-@app.route('/alert')
+''' @app.route('/alert')
 def alerta():
+  return render_template('alert.html', umidade=getUmidade(), atualizacao = subscriber(), status = oposto)  '''
 
-  return render_template('alert.html', umidade=getUmidade(), atualizacao = subscriber(), status = oposto) 
-
-@app.route('/base')
+''' @app.route('/base')
 def base():
   return render_template('base.html')
+
+@app.route('/baseprincipal')
+def principal():
+  return render_template('baseprincipal.html', umidade=getUmidade(), atualizacao = subscriber(), status = sinalAlerta)
+@app.route('/basealerta')
+def renderalerta():
+  return render_template('basealerta.html') '''
 
 def getUmidade():
   conn   = sqlite3.connect('database.db',)
@@ -95,6 +120,7 @@ def getUmidade():
 
 @app.route('/')
 def index():
+  sinalAlerta = subscriber()
   return render_template('index.html', umidade=getUmidade(), atualizacao = subscriber(), status = sinalAlerta)
 
 if __name__ == "__main__":

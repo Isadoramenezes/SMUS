@@ -4,8 +4,20 @@ import sqlite3
 import functools
 import operator
 
+def consultaAlerta():
+  conn = sqlite3.connect('database.db')
+  cursor = conn.cursor()
+  select = cursor.execute("SELECT nivel_alerta FROM controle_de_nivel WHERE id = (SELECT MAX(id) FROM controle_de_nivel)")
+  alertaBanco = cursor.fetchall()
+  conn.close()
+  alertaBancoAtual = alertaBanco[0]
+  ultimoAlerta = functools.reduce(operator.add, (alertaBancoAtual))
+  ultimoAlerta = int(ultimoAlerta)
+  print("Dentro da Consulta")
+  print(ultimoAlerta)
+  return ultimoAlerta
 
-alerta = 50
+
 
 def buscaID():
   conn = sqlite3.connect('database.db')
@@ -31,6 +43,7 @@ def verificaNivel(alerta):
   listaAtual = nivelAtual[0]
   nivelInteiro = functools.reduce(operator.add, (listaAtual))
   nivelInteiro = int(nivelInteiro)
+  print(type(alerta))
   if nivelInteiro > alerta:
     status = True    
   conn.close()
@@ -44,6 +57,9 @@ def subscriber():
     response = TS.read()
     data=json.loads(response)
     newList = data['feeds']
+    alertaAtual = consultaAlerta()
+    print("Dentro do Subscriber")
+    print(alertaAtual)
     for x in newList:
       columns = ', '.join(x.keys())
       placeholders = '"'+'", "'.join(map(str, x.values()))+'"'
@@ -53,21 +69,20 @@ def subscriber():
         query = 'INSERT INTO umidade (%s) VALUES (%s)' % (columns, placeholders)
         print(query)
         cursor.execute(query)
-        conn.commit()   
-        verificaNivel(alerta)    
+        conn.commit() 
+        verificaNivel(alertaAtual)    
     break
   conn.close()
   TS.close()
   print("###### VERIFICA ALERTA #####")
-  print(verificaNivel(alerta))
-  
-  sinalAlerta = verificaNivel(alerta)
+  print(verificaNivel(alertaAtual))
+  sinalAlerta = verificaNivel(alertaAtual)
   print("Sinal Alerta")
   print(sinalAlerta)
 
   return sinalAlerta
   
-sinalAlerta = subscriber()
+
 subscriber()
 
 
