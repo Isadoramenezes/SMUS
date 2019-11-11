@@ -63,8 +63,6 @@ Correção da inserção de dados duplicados no banco (alterações no subscribe
 Correção do problema de leitura do sensor \
 Correção na medição da leitura
 ##### 06/11 -
-Ajustes na emissão do alerta [Concluído em 9.11]
+Ajustes na emissão do alerta [em andamento]
 ##### 08/11 -
 Finalização versão 2.0 Documento Geral do Projeto
-##### 09/11 - 
-Implementação de gerenciamento de alerta com busca no banco.

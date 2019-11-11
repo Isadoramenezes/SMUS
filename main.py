@@ -90,22 +90,6 @@ def login():
 def secret():
   return "Você está logado!"
 
-
-''' @app.route('/alert')
-def alerta():
-  return render_template('alert.html', umidade=getUmidade(), atualizacao = subscriber(), status = oposto)  '''
-
-''' @app.route('/base')
-def base():
-  return render_template('base.html')
-
-@app.route('/baseprincipal')
-def principal():
-  return render_template('baseprincipal.html', umidade=getUmidade(), atualizacao = subscriber(), status = sinalAlerta)
-@app.route('/basealerta')
-def renderalerta():
-  return render_template('basealerta.html') '''
-
 def getUmidade():
   conn   = sqlite3.connect('database.db',)
   cursor = conn.cursor()
