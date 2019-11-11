@@ -83,7 +83,20 @@ def login():
     if completion == False:
       error = 'Usuário ou senha inválidos. Por favor, tente novamente.'
     else:
-      return redirect(url_for('secret'))
+      conn = sqlite3.connect('database.db')
+      with conn:
+        print("entrou no with")
+        cursor = conn.cursor()
+        cursor.execute("SELECT * FROM users WHERE username = ('%s') " %  username)
+        rows = cursor.fetchall()
+        for row in rows:
+          userdb = row[1]
+          userpass = row[4]
+          acesso = row[5]
+          if acesso == 0 and userdb == username and userpass == password:
+            return redirect(url_for('alertManager'))
+          else:
+            return redirect(url_for('secret'))
   return render_template('login.html')
 
 @app.route('/secret')
