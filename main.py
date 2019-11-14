@@ -40,7 +40,7 @@ def register():
   return render_template('register.html', form=form)
 
 class Alerta(Form):
-  nivelAlerta = IntegerField('nivelAlerta', [validators.required(message='Escolha um valor entre 0 e 100')])
+  nivelAlerta = IntegerField('Novo Alerta', [validators.required(message='Escolha um valor entre 0 e 100')])
 
 @app.route('/alertManager', methods = ['GET', 'POST'])
 def alertManager():
